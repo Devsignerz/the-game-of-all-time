@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpdenafbjfowl"]
+
+[ext_resource type="PackedScene" uid="uid://mbutqb8aotyb" path="res://Assets/panel house/Panel_House_Wikipedia_of_Russia_01.FBX" id="1_2i0sw"]
+
+[node name="Panel_House_Wikipedia_of_Russia_01" instance=ExtResource("1_2i0sw")]
+transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 0, 0)

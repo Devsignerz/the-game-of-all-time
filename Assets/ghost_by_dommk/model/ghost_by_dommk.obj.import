@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj45hrh82v7qj"
+path="res://.godot/imported/ghost_by_dommk.obj-f878fdedc089c7b11e3e8162c3b9a87c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ghost_by_dommk.obj-f878fdedc089c7b11e3e8162c3b9a87c.mesh"]
+
+source_file="res://Assets/ghost_by_dommk/model/ghost_by_dommk.obj"
+dest_files=["res://.godot/imported/ghost_by_dommk.obj-f878fdedc089c7b11e3e8162c3b9a87c.mesh", "res://.godot/imported/ghost_by_dommk.obj-f878fdedc089c7b11e3e8162c3b9a87c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

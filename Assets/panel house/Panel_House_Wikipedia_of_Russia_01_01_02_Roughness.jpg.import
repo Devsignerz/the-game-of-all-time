@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://dch3dfs7raehd"
+path.s3tc="res://.godot/imported/Panel_House_Wikipedia_of_Russia_01_01_02_Roughness.jpg-f05f18f1506c04087cd17d56f7adf06f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Assets/panel house/Panel_House_Wikipedia_of_Russia_01_01_02_Roughness.jpg"
+dest_files=["res://.godot/imported/Panel_House_Wikipedia_of_Russia_01_01_02_Roughness.jpg-f05f18f1506c04087cd17d56f7adf06f.s3tc.ctex"]
 
 [params]
 

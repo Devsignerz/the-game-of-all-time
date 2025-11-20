@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://opv20y6l1p0b"
+path.s3tc="res://.godot/imported/Street_Lamp_DM.png-40ba186697b09f23af4bd49dc44a058f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Assets/street lamp/Street_Lamp_DM.png"
+dest_files=["res://.godot/imported/Street_Lamp_DM.png-40ba186697b09f23af4bd49dc44a058f.s3tc.ctex"]
 
 [params]
 

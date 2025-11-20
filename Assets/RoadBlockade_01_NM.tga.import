@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://coq24iwimjc6m"
+path.s3tc="res://.godot/imported/RoadBlockade_01_NM.tga-98e75d4091db7025aa0b22e7c564b52c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Assets/RoadBlockade_01_NM.tga"
+dest_files=["res://.godot/imported/RoadBlockade_01_NM.tga-98e75d4091db7025aa0b22e7c564b52c.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://Assets/RoadBlockade_01_NM.tga"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

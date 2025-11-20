@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ui8kplitvqw3"]
+
+[ext_resource type="PackedScene" uid="uid://dtxaec6vyhmjb" path="res://Assets/japanesestore/store.fbx" id="1_8ef0i"]
+
+[node name="store" instance=ExtResource("1_8ef0i")]
+
+[node name="Point" parent="." index="7"]
+light_energy = 1.087
+
+[node name="Point_001" parent="." index="8"]
+light_energy = 1.087
+
+[node name="Spot_001" parent="." index="11"]
+light_energy = 5.747

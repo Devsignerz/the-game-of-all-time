@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://cxw0x3qst3lip"
+path.s3tc="res://.godot/imported/diffusevariation1.jpg-23420b9a8c987d6179909a5f9f87f047.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Materials/ground gravel/diffusevariation1.jpg"
+dest_files=["res://.godot/imported/diffusevariation1.jpg-23420b9a8c987d6179909a5f9f87f047.s3tc.ctex"]
 
 [params]
 

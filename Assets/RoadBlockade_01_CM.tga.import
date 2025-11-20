@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://ce118j1ql652q"
+path.s3tc="res://.godot/imported/RoadBlockade_01_CM.tga-55ac317d07079d425c7ed9a4e940f238.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Assets/RoadBlockade_01_CM.tga"
+dest_files=["res://.godot/imported/RoadBlockade_01_CM.tga-55ac317d07079d425c7ed9a4e940f238.s3tc.ctex"]
 
 [params]
 

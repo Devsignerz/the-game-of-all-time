@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkk7pid7xxp2t"
-path.bptc="res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"
+uid="uid://c78luukrx686k"
+path.s3tc="res://.godot/imported/displacement.jpg-164347cbf91783ea44448e5e963f5af4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/preller_drive_2k.hdr"
-dest_files=["res://.godot/imported/preller_drive_2k.hdr-c39333a94b04f104422c59596a539e40.bptc.ctex"]
+source_file="res://Materials/ground gravel/displacement.jpg"
+dest_files=["res://.godot/imported/displacement.jpg-164347cbf91783ea44448e5e963f5af4.s3tc.ctex"]
 
 [params]
 
