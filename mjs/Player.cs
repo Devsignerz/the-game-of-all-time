@@ -1,12 +1,12 @@
 using System;
 using Godot;
 
-public partial class Player : Node3D
+public partial class Player : Character
 {
 	[Export] public Camera3D Camera = null;
 	[Export] public AnimationPlayer AnimationPlayer0 = null;
 	[Export] public AnimationPlayer AnimationPlayer1 = null;
-	[Export] public float MoveSpeed = 8.0f;
+	[Export] public long ScorePoints = 0;
 	
 	public override void _Ready()
 	{
