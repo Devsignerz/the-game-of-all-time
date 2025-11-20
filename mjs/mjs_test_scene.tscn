@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcrwgxtkjvqxv"]
+[gd_scene load_steps=5 format=3 uid="uid://bcrwgxtkjvqxv"]
 
 [ext_resource type="Script" uid="uid://b03ai6qe210n5" path="res://mjs/MjsTestScene.cs" id="1_3mkhm"]
 [ext_resource type="Script" uid="uid://dpon7uyxb5mfy" path="res://mjs/Player.cs" id="1_gfqmk"]
+[ext_resource type="PackedScene" uid="uid://d1tbwkijt75k8" path="res://Assets/pistol.tscn" id="3_7vwrt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mkhm"]
 albedo_color = Color(0.4602548, 0.28885254, 0.24824902, 1)
@@ -21,3 +22,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8412957, 0)
 script = ExtResource("1_gfqmk")
 
 [node name="Camera3D" type="Camera3D" parent="Player" groups=["cam"]]
+fov = 120.0
+
+[node name="RightHand" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7111136, -0.6308565, -1)
+
+[node name="pistol" parent="Player/RightHand" instance=ExtResource("3_7vwrt")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, -0.5878501, 0)
+
+[node name="LeftHand" type="Node3D" parent="Player"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="pistol2" parent="Player/LeftHand" instance=ExtResource("3_7vwrt")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0.7111136, -1.2187066, -1)
+
+[editable path="Player/RightHand/pistol"]
+[editable path="Player/LeftHand/pistol2"]
