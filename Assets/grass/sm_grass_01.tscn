@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch6ttd2the01g"]
+
+[ext_resource type="PackedScene" uid="uid://bdsid2sx5dnrd" path="res://Assets/grass/SM_Grass_01.fbx" id="1_6ngai"]
+[ext_resource type="Texture2D" uid="uid://cjsqnk1t5mc4u" path="res://Assets/grass/textures/T_Grass_BaseColor.png" id="2_3414o"]
+[ext_resource type="Texture2D" uid="uid://xwqqvsvyuoi0" path="res://Assets/grass/textures/T_Grass_AO.png" id="3_qs0jh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1guvk"]
+albedo_texture = ExtResource("2_3414o")
+ao_enabled = true
+ao_texture = ExtResource("3_qs0jh")
+ao_texture_channel = 4
+
+[node name="SM_Grass_01" instance=ExtResource("1_6ngai")]
+
+[node name="SM_Grass_01" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_1guvk")

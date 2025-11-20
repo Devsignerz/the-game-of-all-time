@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://b50jopdrcyyre"]
+
+[ext_resource type="Script" uid="uid://dpon7uyxb5mfy" path="res://mjs/Player.cs" id="1_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://cgs7b7eljkjxd" path="res://Materials/moonless_golf_4k.hdr" id="2_hqtel"]
+[ext_resource type="PackedScene" uid="uid://d1tbwkijt75k8" path="res://Assets/pistol/pistol.tscn" id="3_sweqy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_efxa6"]
+panorama = ExtResource("2_hqtel")
+
+[sub_resource type="Sky" id="Sky_dg77c"]
+sky_material = SubResource("PanoramaSkyMaterial_efxa6")
+
+[sub_resource type="Environment" id="Environment_ycdy4"]
+background_mode = 2
+background_energy_multiplier = 0.14
+sky = SubResource("Sky_dg77c")
+
+[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera", "AnimationPlayer0", "AnimationPlayer1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.458576, 4.2562613, 41.191067)
+script = ExtResource("1_i3pqv")
+Camera = NodePath("Camera3D")
+AnimationPlayer0 = NodePath("Camera3D/pistol/gun")
+AnimationPlayer1 = NodePath("Camera3D/pistol2/gun")
+metadata/_edit_group_ = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+environment = SubResource("Environment_ycdy4")
+
+[node name="pistol" parent="Camera3D" instance=ExtResource("3_sweqy")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 1.2783966, -1.9438672, -3.107212)
+
+[node name="pistol2" parent="Camera3D" instance=ExtResource("3_sweqy")]
+transform = Transform3D(-15, 0, 0, 0, 15, 0, 0, 0, 15, -1.3574715, -1.9438672, -3.107212)
+
+[node name="pistol parent" parent="Camera3D/pistol2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.036468655, 0.038329393)
+
+[editable path="Camera3D/pistol"]
+[editable path="Camera3D/pistol2"]
