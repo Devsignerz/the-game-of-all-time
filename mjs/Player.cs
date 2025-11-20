@@ -3,9 +3,9 @@ using Godot;
 
 public partial class Player : Node3D
 {
-	[Export]
-	public Camera3D Camera = null;
-
+	[Export] public Camera3D Camera = null;
+	[Export] public AnimationPlayer AnimationPlayer0 = null;
+	[Export] public AnimationPlayer AnimationPlayer1 = null;
 	[Export] public float MoveSpeed = 8.0f;
 	
 	public override void _Ready()
@@ -20,6 +20,7 @@ public partial class Player : Node3D
 	{
 		ProcessMouseMotion(delta);
 		ProcessKeyPresses(delta);
+		ProcessMouseKeys(delta);
 	}
 
 	public override void _Input(InputEvent @event)
@@ -79,5 +80,40 @@ public partial class Player : Node3D
 		
 		Position += vel;
 	}
+
+	private void ProcessMouseKeys(double delta)
+	{
+		if (Input.IsActionJustReleased("shoot"))
+		{
+			AnimationPlayer anim = null;
+			if (AnimationPlayer0 != null)
+			{
+				anim = AnimationPlayer0;
+			}
+			else if (AnimationPlayer1 != null)
+			{
+				anim = AnimationPlayer1;
+			}
+			else
+			{
+				return;
+			}
+
+			if (anim == AnimationPlayer0 && anim.IsPlaying() && AnimationPlayer1 != null)
+			{
+				anim = AnimationPlayer1;
+			}
+			else if (anim == AnimationPlayer1 && anim.IsPlaying() && AnimationPlayer0 != null)
+			{
+				anim = AnimationPlayer0;
+			}
+
+			if (anim.IsPlaying() == false)
+			{
+				anim.Play("gun shoot");
+			}
+		}
+	}
+	
 	
 }

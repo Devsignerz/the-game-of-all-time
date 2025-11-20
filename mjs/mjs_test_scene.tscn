@@ -17,9 +17,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07479, 0, -3.6897879)
 size = Vector3(20.46576, 1, 28.608398)
 material = SubResource("StandardMaterial3D_3mkhm")
 
-[node name="Player" type="Node3D" parent="."]
+[node name="Player" type="Node3D" parent="." node_paths=PackedStringArray("AnimationPlayer0", "AnimationPlayer1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8412957, 0)
 script = ExtResource("1_gfqmk")
+AnimationPlayer0 = NodePath("RightHand/pistol/gun")
+AnimationPlayer1 = NodePath("LeftHand/pistol2/gun")
 
 [node name="Camera3D" type="Camera3D" parent="Player" groups=["cam"]]
 fov = 120.0
