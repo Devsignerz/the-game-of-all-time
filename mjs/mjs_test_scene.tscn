@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcrwgxtkjvqxv"]
+
+[ext_resource type="Script" uid="uid://b03ai6qe210n5" path="res://mjs/MjsTestScene.cs" id="1_3mkhm"]
+[ext_resource type="Script" uid="uid://dpon7uyxb5mfy" path="res://mjs/Player.cs" id="1_gfqmk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mkhm"]
+albedo_color = Color(0.4602548, 0.28885254, 0.24824902, 1)
+
+[node name="MjsTestScene" type="Node"]
+script = ExtResource("1_3mkhm")
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07479, 0, -3.6897879)
+size = Vector3(20.46576, 1, 28.608398)
+material = SubResource("StandardMaterial3D_3mkhm")
+
+[node name="Player" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.8412957, 0)
+script = ExtResource("1_gfqmk")
+
+[node name="Camera3D" type="Camera3D" parent="Player" groups=["cam"]]
