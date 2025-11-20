@@ -113,6 +113,38 @@ public partial class Player : Node3D
 				anim.Play("gun shoot");
 			}
 		}
+		
+		if (Input.IsActionJustReleased("reload"))
+		{
+			AnimationPlayer anim = null;
+			if (AnimationPlayer0 != null)
+			{
+				anim = AnimationPlayer0;
+			}
+			else if (AnimationPlayer1 != null)
+			{
+				anim = AnimationPlayer1;
+			}
+			else
+			{
+				return;
+			}
+
+			if (anim == AnimationPlayer0 && anim.IsPlaying() && AnimationPlayer1 != null)
+			{
+				anim = AnimationPlayer1;
+			}
+			else if (anim == AnimationPlayer1 && anim.IsPlaying() && AnimationPlayer0 != null)
+			{
+				anim = AnimationPlayer0;
+			}
+
+			if (anim.IsPlaying() == false)
+			{
+				anim.Play("reload");
+			}
+		}
+		
 	}
 	
 	
